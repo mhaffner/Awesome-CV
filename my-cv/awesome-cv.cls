@@ -223,6 +223,12 @@
 \newcommand*{\skilltypestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
 \newcommand*{\skillsetstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\color{text} #1}}
 
+% For elements of techskill
+\newcommand*{\techskilltitlestyle}[1]{{\fontsize{9pt}{1.1em}\bodyfont\color{graytext} #1}}
+\newcommand*{\techskillpositionstyle}[1]{{\fontsize{9pt}{1.1em}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\techskilldatestyle}[1]{{\fontsize{9pt}{1.1em}\bodyfont\color{graytext} #1}}
+\newcommand*{\techskilllocationstyle}[1]{{\fontsize{9pt}{1.1em}\bodyfontlight\slshape\color{awesome} #1}}
+
 % For elements of the cover letter
 \newcommand*{\lettersectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{text}\@sectioncolor #1}}
 \newcommand*{\recipientaddressstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\scshape\color{graytext} #1}}
@@ -626,7 +632,7 @@
   \begin{center}
     \setlength\tabcolsep{1ex}
     \setlength{\extrarowheight}{0pt}
-    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} r L{\textwidth * \real{0.9}}}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l L{\textwidth * \real{0.9}}}
 }{%
     \end{tabular*}
   \end{center}
@@ -635,6 +641,24 @@
 % Usage: \cvskill{<type>}{<skillset>}
 \newcommand*{\cvskill}[2]{%
 	\skilltypestyle{#1} & \skillsetstyle{#2} \\
+}
+
+% Define an environment for cvtechskills
+\newenvironment{cvtechskills}{
+  \vspace{0.8mm}
+  \begin{center}
+    \setlength\tabcolsep{0pt}
+    \setlength{\extrarowheight}{0pt}
+    \begin{tabular*}{\textwidth}{@{} C{0.5cm} L{4.5cm} R{13.00cm}}
+}{
+    \end{tabular*}
+  \end{center}
+}
+% Define a line of cv information(honor, award or something else)
+% Usage: \cvhonor{<position>}{<title>}{<location>}{<date>}
+\newcommand*{\cvtechskill}[4]{
+    \techskilldatestyle{#4} & \techskillpositionstyle{#1} & \techskilltitlestyle{#2} \techskilllocationstyle{#3}
+  \\
 }
 
 % Define an environment for cvitems(for cventry)
