@@ -18,10 +18,10 @@
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[11pt, a4paper]{awesome-cv}
+\documentclass[12pt, a4paper]{awesome-cv}
 
 % Configure page margins with geometry
-\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\geometry{left=1.4cm, top=1.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
 % Specify the location of the included fonts
 \fontdir[fonts/]
@@ -29,7 +29,7 @@
 % Color for highlights
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
-\colorlet{awesome}{awesome-red}
+\colorlet{awesome}{awesome-orange}
 % Uncomment if you would like to specify your own color
 % \definecolor{awesome}{HTML}{CA63A8}
 
@@ -52,16 +52,18 @@
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
-% \photo[rectangle,edge,right]{./examples/profile}
-\name{Byungjin}{Park}
-\position{Software Engineer{\enskip\cdotp\enskip}Security Expert}
-\address{246-1002, Gwangmyeongmayrouge Apt. 86, Cheongna lime-ro, Seo-gu, Incheon-si, 404-180, Rep. of KOREA}
+% \photo{./examples/profile.png}
+\name{Matthew M.}{Haffner}
+\position{Ph.D Student{\enskip\cdotp\enskip}Department of
+  Geography{\enskip\cdotp\enskip}Oklahoma State University}
+\address{337 Murray Hall, Department of Geography, Oklahoma State University,
+  Stillwater, OK 74078}
 
-\mobile{(+82) 10-9030-1843}
-\email{posquit0.bj@gmail.com}
-\homepage{www.posquit0.com}
-\github{posquit0}
-\linkedin{posquit0}
+% \mobile{405-698-0280}
+\email{matt.haffner@okstate.edu}
+\homepage{matthaffner.wordpress.com}
+\github{mhaffner}
+\linkedin{matthew-haffner-07296176}
 % \gitlab{gitlab-id}
 % \stackoverflow{SO-id}{SO-name}
 % \twitter{@twit}
@@ -69,7 +71,7 @@
 % \reddit{reddit-id}
 % \extrainfo{extra informations}
 
-\quote{``Be the change that you want to see in the world."}
+\quote{Academic interests: GIScience, Urban Geography, Big Data}
 
 
 %-------------------------------------------------------------------------------
@@ -77,13 +79,13 @@
 
 % Print the header with above personal informations
 % Give optional argument to change alignment(C: center, L: left, R: right)
-\makecvheader[C]
+\makecvheader
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
 \makecvfooter
   {\today}
-  {Claud D. Park~~~·~~~Résumé}
+  {Matthew Haffner~~~·~~~Resume}
   {\thepage}
 
 
@@ -91,14 +93,13 @@
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
-\input{resume/summary.tex}
-\input{resume/experience.tex}
-\input{resume/honors.tex}
-\input{resume/presentation.tex}
-\input{resume/writing.tex}
-\input{resume/committees.tex}
-\input{resume/education.tex}
-\input{resume/extracurricular.tex}
+\input{cv/education.tex}
+\input{cv/technical-skills.tex}
+\input{cv/experience.tex}
+\input{cv/honors.tex}
+%\input{cv/publication.tex}
+%\input{cv/presentation.tex}
+%\input{cv/invited-lecture.tex}
 
 
 %-------------------------------------------------------------------------------
