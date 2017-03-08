@@ -219,6 +219,12 @@
 \newcommand*{\honordatestyle}[1]{{\fontsize{11pt}{1.1em}\bodyfont\color{graytext} #1}}
 \newcommand*{\honorlocationstyle}[1]{{\fontsize{11pt}{1.1em}\bodyfontlight\slshape\color{awesome} #1}}
 
+% For elements of membership
+\newcommand*{\membershiptitlestyle}[1]{{\fontsize{11pt}{1.1em}\bodyfont\color{graytext} #1}}
+\newcommand*{\membershippositionstyle}[1]{{\fontsize{11pt}{1.1em}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\membershipdatestyle}[1]{{\fontsize{11pt}{1.1em}\bodyfont\color{graytext} #1}}
+\newcommand*{\membershiplocationstyle}[1]{{\fontsize{11pt}{1.1em}\bodyfontlight\slshape\color{awesome} #1}}
+
 % For elements of skill
 \newcommand*{\skilltypestyle}[1]{{\fontsize{12pt}{1.1em}\bodyfont\bfseries\color{darktext} #1}}
 \newcommand*{\skillsetstyle}[1]{{\fontsize{11pt}{1.1em}\bodyfontlight\color{text} #1}}
@@ -623,6 +629,23 @@
 % Usage: \cvhonor{<position>}{<title>}{<location>}{<date>}
 \newcommand*{\cvhonor}[4]{%
   \honordatestyle{#4} & \honorpositionstyle{#1} \honortitlestyle{#2} & \honorlocationstyle{#3} \\
+}
+
+% Define an environment for cvmembership
+\newenvironment{cvmemberships}{
+  \begin{center}
+    \setlength\tabcolsep{0pt}
+    \setlength{\extrarowheight}{0pt}
+    \begin{tabular*}{\textwidth}{@{} C{1.5cm} L{11.95cm} R{4.7cm}}
+}{
+    \end{tabular*}
+  \end{center}
+}
+% Define a line of cv information(honor, award or something else)
+% Usage: \cvhonor{<position>}{<title>}{<location>}{<date>}
+\newcommand*{\cvmembership}[4]{
+  \membershipdatestyle{#4} & \membershippositionstyle{#1}, \membershiptitlestyle{#2} & \membershiplocationstyle{#3}
+  \\
 }
 
 % Define an environment for cvskill
