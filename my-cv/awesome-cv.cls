@@ -589,7 +589,7 @@
   \end{tabular*}%
 }
 
-% Define an environment for cvsubntry
+% Define an environment for cvsubentry
 \newenvironment{cvsubentries}{%
   \begin{center}
 }{%
