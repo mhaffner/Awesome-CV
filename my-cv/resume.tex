@@ -19,6 +19,7 @@
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
 \documentclass[12pt, a4paper]{awesome-cv}
+%\usepackage{indentfirst}
 
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=1.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
@@ -85,7 +86,7 @@
 % Leave any of these blank if they are not needed
 \makecvfooter
   {\today}
-  {Matthew Haffner~~~·~~~Resume}
+  {Matthew Haffner~~~·~~~Curriculum Vitae}
   {\thepage}
 
 
@@ -97,9 +98,12 @@
 \input{cv/technical-skills.tex}
 \input{cv/experience.tex}
 \input{cv/honors.tex}
-%\input{cv/publication.tex}
-%\input{cv/presentation.tex}
-%\input{cv/invited-lecture.tex}
+\input{cv/publication.tex}
+\input{cv/presentation.tex}
+\input{cv/invited-lecture.tex}
+%\newpage % make professional memberships all on one page
+\input{cv/memberships.tex}
+\input{cv/professional-service.tex}
 
 
 %-------------------------------------------------------------------------------
