@@ -3,17 +3,27 @@
  (lambda ()
    (TeX-add-to-alist 'LaTeX-provided-class-options
                      '(("awesome-cv" "12pt" "a4paper")))
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
+   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
    (TeX-run-style-hooks
     "latex2e"
     "cv/education"
-    "cv/skills"
-    "cv/experience"
-    "cv/extracurricular"
-    "cv/honors"
+    "cv/publication"
     "cv/presentation"
-    "cv/writing"
-    "cv/committees"
+    "cv/experience"
+    "cv/invited-lecture"
+    "cv/honors"
+    "cv/memberships"
+    "cv/professional-service"
+    "cv/technical-skills"
     "awesome-cv"
-    "awesome-cv12"))
+    "awesome-cv12")
+   (LaTeX-add-xcolor-definecolors
+    "awesome"))
  :latex)
 
