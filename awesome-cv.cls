@@ -188,51 +188,80 @@
 %-------------------------------------------------------------------------------
 % Configure styles for each CV elements
 % For fundamental structures
-\newcommand*{\headerfirstnamestyle}[1]{{\fontsize{32pt}{1em}\headerfontlight\color{graytext} #1}}
-\newcommand*{\headerlastnamestyle}[1]{{\fontsize{32pt}{1em}\headerfont\bfseries\color{text} #1}}
-\newcommand*{\headerpositionstyle}[1]{{\fontsize{7.6pt}{1em}\bodyfont\scshape\color{awesome} #1}}
-\newcommand*{\headeraddressstyle}[1]{{\fontsize{8pt}{1em}\headerfont\itshape\color{lighttext} #1}}
-\newcommand*{\headersocialstyle}[1]{{\fontsize{6.8pt}{1em}\headerfont\color{text} #1}}
-\newcommand*{\headerquotestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\itshape\color{darktext} #1}}
-\newcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\scshape\color{lighttext} #1}}
+%-------------------------------------------------------------------------------
+%                Configuration for styles
+%-------------------------------------------------------------------------------
+% Configure styles for each CV elements
+% For fundamental structures
+\newcommand*{\headerfirstnamestyle}[1]{{\fontsize{34pt}{1em}\headerfontlight\color{graytext} #1}}
+\newcommand*{\headerlastnamestyle}[1]{{\fontsize{34pt}{1em}\headerfont\bfseries\color{text} #1}}
+\newcommand*{\headerpositionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\scshape\color{awesome} #1}}
+\newcommand*{\headeraddressstyle}[1]{{\fontsize{10.5pt}{1em}\headerfont\itshape\color{lighttext} #1}}
+\newcommand*{\headersocialstyle}[1]{{\fontsize{9pt}{1.1em}\headerfont\color{text} #1}}
+\newcommand*{\headerquotestyle}[1]{{\fontsize{11pt}{1.1em}\bodyfont\itshape\color{darktext} #1}}
+\newcommand*{\footerstyle}[1]{{\fontsize{11pt}{1em}\footerfont\scshape\color{lighttext} #1}}
 \newcommand*{\sectionstyle}[1]{{\fontsize{16pt}{1em}\bodyfont\bfseries\color{text}\@sectioncolor #1}}
 \newcommand*{\subsectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\scshape\textcolor{text}{#1}}}
 \newcommand*{\paragraphstyle}{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{text}}
 
 % For elements of entry
-\newcommand*{\entrytitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
-\newcommand*{\entrypositionstyle}[1]{{\fontsize{8pt}{1em}\bodyfont\scshape\color{graytext} #1}}
-\newcommand*{\entrydatestyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\slshape\color{graytext} #1}}
-\newcommand*{\entrylocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{awesome} #1}}
-\newcommand*{\descriptionstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{text} #1}}
+\newcommand*{\entrytitlestyle}[1]{{\fontsize{12pt}{1.1em}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\entrypositionstyle}[1]{{\fontsize{12pt}{1.1em}\bodyfont\scshape\color{graytext} #1}}
+\newcommand*{\entrydatestyle}[1]{{\fontsize{12pt}{1.1em}\bodyfontlight\slshape\color{graytext} #1}}
+\newcommand*{\entrylocationstyle}[1]{{\fontsize{12pt}{1.1em}\bodyfontlight\slshape\color{awesome} #1}}
+\newcommand*{\descriptionstyle}[1]{{\fontsize{12pt}{1.1em}\bodyfontlight\upshape\color{text} #1}}
 
 % For elements of subentry
-\newcommand*{\subentrytitlestyle}[1]{{\fontsize{8pt}{1em}\bodyfont\mdseries\color{graytext} #1}}
-\newcommand*{\subentrypositionstyle}[1]{{\fontsize{7pt}{1em}\bodyfont\scshape\color{graytext} #1}}
-\newcommand*{\subentrydatestyle}[1]{{\fontsize{7pt}{1em}\bodyfontlight\slshape\color{graytext} #1}}
-\newcommand*{\subentrylocationstyle}[1]{{\fontsize{7pt}{1em}\bodyfontlight\slshape\color{awesome} #1}}
-\newcommand*{\subdescriptionstyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\upshape\color{text} #1}}
+\newcommand*{\subentrytitlestyle}[1]{{\fontsize{10.5pt}{1.1em}\bodyfont\mdseries\color{graytext} #1}}
+\newcommand*{\subentrypositionstyle}[1]{{\fontsize{9.5pt}{1.1em}\bodyfont\scshape\color{graytext} #1}}
+\newcommand*{\subentrydatestyle}[1]{{\fontsize{9.5pt}{1.1em}\bodyfontlight\slshape\color{graytext} #1}}
+\newcommand*{\subentrylocationstyle}[1]{{\fontsize{9.5pt}{1.1em}\bodyfontlight\slshape\color{awesome} #1}}
+\newcommand*{\subdescriptionstyle}[1]{{\fontsize{10.5pt}{1.1em}\bodyfontlight\upshape\color{text} #1}}
 
 % For elements of honor
-\newcommand*{\honortitlestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\color{graytext} #1}}
-\newcommand*{\honorpositionstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
-\newcommand*{\honordatestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\color{graytext} #1}}
-\newcommand*{\honorlocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{awesome} #1}}
+\newcommand*{\honortitlestyle}[1]{{\fontsize{11pt}{1.1em}\bodyfont\color{graytext} #1}}
+\newcommand*{\honorpositionstyle}[1]{{\fontsize{11pt}{1.1em}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\honordatestyle}[1]{{\fontsize{11pt}{1.1em}\bodyfont\color{graytext} #1}}
+\newcommand*{\honorlocationstyle}[1]{{\fontsize{11pt}{1.1em}\bodyfontlight\slshape\color{awesome} #1}}
+
+% For elements of membership
+\newcommand*{\membershiptitlestyle}[1]{{\fontsize{11pt}{1.1em}\bodyfont\color{graytext} #1}}
+\newcommand*{\membershippositionstyle}[1]{{\fontsize{11pt}{1.1em}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\membershipdatestyle}[1]{{\fontsize{11pt}{1.1em}\bodyfont\color{graytext} #1}}
+\newcommand*{\membershiplocationstyle}[1]{{\fontsize{11pt}{1.1em}\bodyfontlight\slshape\color{awesome} #1}}
 
 % For elements of skill
-\newcommand*{\skilltypestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
-\newcommand*{\skillsetstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\color{text} #1}}
+\newcommand*{\skilltypestyle}[1]{{\fontsize{12pt}{1.1em}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\skillsetstyle}[1]{{\fontsize{11pt}{1.1em}\bodyfontlight\color{text} #1}}
+
+% For elements of techskill
+\newcommand*{\techskilltitlestyle}[1]{{\fontsize{11pt}{1.1em}\bodyfont\color{graytext} #1}}
+\newcommand*{\techskillpositionstyle}[1]{{\fontsize{11pt}{1.1em}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\techskilldatestyle}[1]{{\fontsize{11pt}{1.1em}\bodyfont\color{graytext} #1}}
+\newcommand*{\techskilllocationstyle}[1]{{\fontsize{11pt}{1.1em}\bodyfontlight\slshape\color{awesome} #1}}
 
 % For elements of the cover letter
 \newcommand*{\lettersectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{text}\@sectioncolor #1}}
-\newcommand*{\recipientaddressstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\scshape\color{graytext} #1}}
-\newcommand*{\recipienttitlestyle}[1]{{\fontsize{11pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
-\newcommand*{\lettertitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\bfseries\color{darktext} \underline{#1}}}
-\newcommand*{\letterdatestyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{graytext} #1}}
-\newcommand*{\lettertextstyle}{\fontsize{10pt}{1.4em}\bodyfontlight\upshape\color{graytext}}
-\newcommand*{\letternamestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
-\newcommand*{\letterenclosurestyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\slshape\color{lighttext} #1}}
+\newcommand*{\recipientaddressstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\scshape\color{graytext} #1}}
+\newcommand*{\recipienttitlestyle}[1]{{\fontsize{12pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\lettertitlestyle}[1]{{\fontsize{11pt}{1em}\bodyfontlight\bfseries\color{darktext} \underline{#1}}}
+\newcommand*{\letterdatestyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\slshape\color{graytext} #1}}
+\newcommand*{\lettertextstyle}{\fontsize{11pt}{1.4em}\bodyfontlight\upshape\color{text}}
+\newcommand*{\letternamestyle}[1]{{\fontsize{11pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\letterenclosurestyle}[1]{{\fontsize{11pt}{1em}\bodyfontlight\slshape\color{lighttext} #1}}
 
+% For elements of statements 
+\newcommand*{\statementtitlestyle}[1]{{\fontsize{34pt}{1em}\headerfontlight\color{graytext} #1}}
+\newcommand*{\statementsectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{text}\@sectioncolor #1}}
+
+% For elements of course evaluations
+\newcommand*{\coursetitlestyle}[1]{{\fontsize{12pt}{1.1em}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\evaltypestyle}[1]{{\fontsize{12pt}{1.1em}\bodyfont\scshape\color{graytext} #1}}
+
+% For elements of references
+\newcommand*{\referencenamestyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\referencerelationshipstyle}[1]{{\fontsize{12pt}{1em}\bodyfontlight\slshape\color{text} #1}}
+\newcommand*{\referenceaddressstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\bodyfontlight\color{text} #1}}
 
 %-------------------------------------------------------------------------------
 %                Commands for personal information
@@ -276,6 +305,10 @@
 % Defines writer's mobile (optional)
 % Usage: \mobile{<mobile number>}
 \newcommand*{\mobile}[1]{\def\@mobile{#1}}
+
+% Defines writer's office number (optional)
+% Usage: \officenum{<office number>}
+\newcommand*{\officenum}[1]{\def\@officenum{#1}}
 
 % Defines writer's email (optional)
 % Usage: \email{<email adress>}
@@ -441,6 +474,12 @@
         {%
           \faMobile\acvHeaderIconSep\@mobile%
           \setbool{isstart}{false}%
+        }%
+      \ifthenelse{\isundefined{\@officenum}}%
+        {}%
+        {%
+          \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
+          \faPhone\acvHeaderIconSep\@officenum%
         }%
       \ifthenelse{\isundefined{\@email}}%
         {}%
@@ -608,7 +647,7 @@
   \begin{center}
     \setlength\tabcolsep{0pt}
     \setlength{\extrarowheight}{0pt}
-    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} C{1.5cm} L{\textwidth - 4.0cm} R{5.0cm}}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} C{1.5cm} L{\textwidth - 9.0cm} R{7.5cm}}
 }{%
     \end{tabular*}
   \end{center}
@@ -616,7 +655,24 @@
 % Define a line of cv information(honor, award or something else)
 % Usage: \cvhonor{<position>}{<title>}{<location>}{<date>}
 \newcommand*{\cvhonor}[4]{%
-  \honordatestyle{#4} & \honorpositionstyle{#1}, \honortitlestyle{#2} & \honorlocationstyle{#3} \\
+  \honordatestyle{#4} & \honorpositionstyle{#1} \honortitlestyle{#2} & \honorlocationstyle{#3} \\
+}
+
+% Define an environment for cvmembership
+\newenvironment{cvmemberships}{
+  \begin{center}
+    \setlength\tabcolsep{0pt}
+    \setlength{\extrarowheight}{0pt}
+    \begin{tabular*}{\textwidth}{@{} C{1.5cm} L{11.95cm} R{4.7cm}}
+}{
+    \end{tabular*}
+  \end{center}
+}
+% Define a line of cv membership
+% Usage: \cvhonor{<position>}{<title>}{<location>}{<date>}
+\newcommand*{\cvmembership}[4]{
+  \membershipdatestyle{#4} & \membershippositionstyle{#1} \membershiptitlestyle{#2} & \membershiplocationstyle{#3}
+  \\
 }
 
 % Define an environment for cvskill
@@ -637,6 +693,24 @@
 	\skilltypestyle{#1} & \skillsetstyle{#2} \\
 }
 
+% Define an environment for cvtechskills
+\newenvironment{cvtechskills}{
+  \vspace{0.8mm}
+  \begin{center}
+    \setlength\tabcolsep{0pt}
+    \setlength{\extrarowheight}{0pt}
+    \begin{tabular*}{\textwidth}{@{} C{0.5cm} L{4.5cm} R{13.00cm}}
+}{
+    \end{tabular*}
+  \end{center}
+}
+% Define a line of cv information(honor, award or something else)
+% Usage: \cvhonor{<position>}{<title>}{<location>}{<date>}
+\newcommand*{\cvtechskill}[4]{
+    \techskilldatestyle{#4} & \techskillpositionstyle{#1} & \techskilltitlestyle{#2} \techskilllocationstyle{#3}
+  \\
+}
+
 % Define an environment for cvitems(for cventry)
 \newenvironment{cvitems}{%
   \vspace{-4.0mm}
@@ -650,6 +724,18 @@
   \vspace{-4.0mm}
 }
 
+% Define an environment for experience items (for experience)
+\newenvironment{expitems}{%
+  \vspace{-4.0mm}
+  \begin{justify}
+  \begin{itemize}[leftmargin=2ex, nosep, noitemsep, rightmargin=4.5cm]
+    \setlength{\parskip}{0pt}
+    \renewcommand{\labelitemi}{\bullet}
+}{%
+  \end{itemize}
+  \end{justify}
+  \vspace{-4.0mm}
+}
 
 %-------------------------------------------------------------------------------
 %                Commands for elements of Cover Letter
@@ -657,6 +743,8 @@
 % Define an environment for cvletter
 \newenvironment{cvletter}{%
   \lettertextstyle
+  % skip a line between each paragraph
+  \setlength{\parskip}{\baselineskip}
 }{%
 }
 
@@ -700,4 +788,88 @@
       \\\\\\
       \letterenclosurestyle{\@letterenclname: \@letterenclosure} \\
     }
+}
+
+%-------------------------------------------------------------------------------
+%                Commands for elements of Statements
+%-------------------------------------------------------------------------------
+% Define an environment for statements
+% These should mimic the Cover Letter styles
+\newenvironment{statement}{%
+  \setlength{\parskip}{\baselineskip}
+  \lettertextstyle
+}{%
+}
+
+% Define a section for the cover letter
+% Usage: \lettersection{<section-title>}
+\newcommand{\statementsection}[1]{%
+  \par\addvspace{2.4ex}
+  \phantomsection{}
+  \lettersectionstyle{#1}
+  \color{gray}\vhrulefill{0.9pt}
+  \par\nobreak\addvspace{1.4ex}
+}
+
+% Defines the statement title (required)
+% Usage: \statementtitle{<title>}
+\newcommand*{\statementtitle}[1]{\def\@statementtitle{#1}}
+
+% Define a title for statements
+%\newcommand*{\makestatementtitle}[1]{%
+%  \vspace{8.4mm}
+%  \statementtitlestyle{\@statementtitle}
+%  \par
+%}{%
+%}
+
+% Define a title for statement (research/teaching)
+% Usage: \makestatementtitle
+\newcommand*{\makestatementtitle}[1][C]{%
+  \newlength{\headertextwidth}
+  \setlength{\headertextwidth}{\textwidth}
+  \begin{minipage}[c]{\headertextwidth}
+    \centering
+    \statementtitlestyle{\@statementtitle}
+%    \headerfirstnamestyle{\@firstname}\headerlastnamestyle{{}\acvHeaderNameDelim\@lastname}%
+  \end{minipage}%
+}
+
+% course title
+\newcommand*{\coursetitle}[1]{%
+  \vspace{3.4mm}
+  \begin{center}
+    \coursetitlestyle{#1} \\
+  \end{center}
+}
+
+% evaluation type (instructor, course, open-ended responses)
+\newcommand*{\evaltype}[1]{%
+  \setlength{\parskip}{1em}
+  \begin{center}
+    \evaltypestyle{#1} \\
+  \end{center}
+}
+
+% Defines reference's information
+% Usage: \reference{<reference name>}{<reference address>}
+% Usage: \referencename{<reference name>}
+% Usage: \referenceaddress{<reference address>}
+% \newcommand*{\reference}[2]{\def\@referencename{#1}\def\@referenceaddress{#2}}
+% \newcommand*{\referencename}[1]{\def\@referencename{#1}}
+% \newcommand*{\referenceaddress}[1]{\def\@referenceaddress{#1}}
+
+\newenvironment{references}{%
+  \lettertextstyle
+}{%
+}
+
+% Define command for reference 
+% usage 
+\newcommand{\addreference}[3]{%
+  %\addvspace{1.0ex}
+  %\phantomsection{}
+  \referencenamestyle{#1} \\
+  \referencerelationshipstyle{#2} \\
+  \referenceaddressstyle{#3} \\
 }
