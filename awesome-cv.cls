@@ -161,6 +161,7 @@
 %                Configuration for fonts
 %-------------------------------------------------------------------------------
 % Set the FontAwesome font to be up-to-date.
+\let\FA\relax
 \newfontfamily\FA[Path=\@fontdir]{FontAwesome}
 % Set font for header (default is Roboto)
 \newfontfamily\headerfont[
@@ -229,6 +230,10 @@
 \newcommand*{\membershippositionstyle}[1]{{\fontsize{11pt}{1.1em}\bodyfont\bfseries\color{darktext} #1}}
 \newcommand*{\membershipdatestyle}[1]{{\fontsize{11pt}{1.1em}\bodyfont\color{graytext} #1}}
 \newcommand*{\membershiplocationstyle}[1]{{\fontsize{11pt}{1.1em}\bodyfontlight\slshape\color{awesome} #1}}
+
+% For elements of job
+\newcommand*{\jobtitlestyle}[1]{{\fontsize{11pt}{1.1em}\bodyfont\color{darktext} #1}}
+\newcommand*{\jobdatestyle}[1]{{\fontsize{11pt}{1.1em}\bodyfont\color{awesome} #1}}
 
 % For elements of skill
 \newcommand*{\skilltypestyle}[1]{{\fontsize{12pt}{1.1em}\bodyfont\bfseries\color{darktext} #1}}
@@ -674,6 +679,24 @@
   \membershipdatestyle{#4} & \membershippositionstyle{#1} \membershiptitlestyle{#2} & \membershiplocationstyle{#3}
   \\
 }
+
+% Define an environment for cvemployment
+\newenvironment{cvemployment}{
+  \begin{center}
+    \setlength\tabcolsep{0pt}
+    \setlength{\extrarowheight}{0pt}
+    \begin{tabular*}{\textwidth}{@{} L{15.45cm} R{2.7cm}}
+}{
+    \end{tabular*}
+  \end{center}
+}
+% Define a line of cvemployment
+% Usage: \cvhonor{<position>}{<title>}{<location>}{<date>}
+\newcommand*{\job}[2]{
+  \jobtitlestyle{#1} & \jobdatestyle{#2}
+  \\
+}
+
 
 % Define an environment for cvskill
 \newenvironment{cvskills}{%
