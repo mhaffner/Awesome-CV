@@ -702,25 +702,6 @@
   \\
 }
 
-% TODO need to figure out how to fix this; every time I try to right align the
-% last (third) column, the links are one line above everything else. no idea why
-% i also would like to apply a hanging indent on the second column but i cant
-% get it to apply; tried doing this in software-projects-exp.tex file and in the
-% code below
-
-% Define an environment for softwareproject2 (experimental)
-\newenvironment{softwareprojectexp}{
-  %% below didn't work
-  % \begin{tabular}{>{\raggedright}p{0.18\linewidth}>{\raggedright}p{0.38\linewidth}>{\raggedright}p{0.38\linewidth}}
-  %% tried this too but then links are one line above everything else
-  % \begin{tabular}{{p{3cm} p{7.5cm} rp{5.5cm}}}
-  %% also tried this too but doesn't work
-  %  \begin{tabular}{{p{3cm} p{7.5cm} >{\raggedright}p{5.5cm}}}
-    \begin{tabular}{{p{3cm} p{7.5cm} p{5.5cm}}}
-      }{
-    \end{tabular}
-}
-
 % Define an environment for softwareproject
 \newenvironment{softwareproject}{
   \begin{center}
