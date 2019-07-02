@@ -83,6 +83,8 @@
 % Needed to deal hyperlink
 \RequirePackage[hidelinks,unicode]{hyperref}
 \hypersetup{%
+  %colorlinks = true,
+  %urlcolor = {awesome},
   pdftitle={},
   pdfauthor={},
   pdfsubject={},
@@ -426,6 +428,9 @@
 \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 
+\newcolumntype{Y}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+\newcolumntype{Z}[1]{>{\hangindent=1cm}>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+\newcolumntype{U}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
 % Use to draw horizontal line with specific thickness
 \def\vhrulefill#1{\leavevmode\leaders\hrule\@height#1\hfill \kern\z@}
 
@@ -697,6 +702,42 @@
   \\
 }
 
+% TODO need to figure out how to fix this; every time I try to right align the
+% last (third) column, the links are one line above everything else. no idea why
+% i also would like to apply a hanging indent on the second column but i cant
+% get it to apply; tried doing this in software-projects-exp.tex file and in the
+% code below
+
+% Define an environment for softwareproject2 (experimental)
+\newenvironment{softwareprojectexp}{
+  %% below didn't work
+  % \begin{tabular}{>{\raggedright}p{0.18\linewidth}>{\raggedright}p{0.38\linewidth}>{\raggedright}p{0.38\linewidth}}
+  %% tried this too but then links are one line above everything else
+  % \begin{tabular}{{p{3cm} p{7.5cm} rp{5.5cm}}}
+  %% also tried this too but doesn't work
+  %  \begin{tabular}{{p{3cm} p{7.5cm} >{\raggedright}p{5.5cm}}}
+    \begin{tabular}{{p{3cm} p{7.5cm} p{5.5cm}}}
+      }{
+    \end{tabular}
+}
+
+% Define an environment for softwareproject
+\newenvironment{softwareproject}{
+  \begin{center}
+    \setlength\tabcolsep{0pt}
+    \setlength{\extrarowheight}{0pt}
+    \begin{tabular*}{\textwidth}{@{} Y{4cm} Z{6.65cm} U{7.2cm}}
+      }{
+    \end{tabular*}
+  \end{center}
+}
+
+% Define a line of softwareproject
+% Usage: \cvhonor{<position>}{<title>}{<location>}{<date>}
+\newcommand{\software}[3]{
+  \hspace{0.5cm} \jobtitlestyle{#1} & \jobtitlestyle{#2} & \jobtitlestyle{#3}
+  \\
+}
 
 % Define an environment for cvskill
 \newenvironment{cvskills}{%
